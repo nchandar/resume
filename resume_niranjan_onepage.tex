@@ -1,0 +1,169 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{\textbf{#1}{: #2 \vspace{-2pt}}}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeExpSubheading}[3]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} --- #2 & #3 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Nithyanand (Niranjan) Chandarraj} & Email:
+\href{mailto:nniranc@gmail.com}{nniranc@gmail.com}\\
+& Mobile: +1 (650) 238 7999 \\
+\end{tabular*}
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+  \resumeExpSubheading
+    {Salesforce}{Software Engineering LMTS}{Jan 2024 -- Present}
+    \resumeItemListStart
+      \resumeItem{Platform Architecture}
+        {Led backend architecture for Sales Coach, an AI-powered coaching platform for sales executives.}
+      \resumeItem{AI Systems}
+        {Designed RAG-based systems using Whisper (STT), BYOM (LLMs), and Amazon Polly (TTS).}
+      \resumeItem{Scalable APIs}
+        {Built low-latency APIs for real-time conversational coaching simulations and model interactions.}
+      \resumeItem{Salesforce Go}
+        {Built backend systems for guided setup and recommendation flows from licenses, features, and org configuration; mentored engineers on platform design.}
+      \resumeItem{Technical Leadership}
+        {Mentored engineers and partnered across teams to drive API adoption, architecture decisions, and delivery execution.}
+    \resumeItemListEnd
+
+  \resumeExpSubheading
+    {Salesforce}{Software Engineering SMTS}{Oct 2018 -- Dec 2023}
+    \resumeItemListStart
+      \resumeItem{PRM Enablement APIs}
+        {Designed and built backend APIs and services for the PRM Enablement platform, used by internal teams and external customers.}
+      \resumeItem{Real-Time Progress Updates}
+        {Built event-driven milestone and task refresh flows using backend events and streaming/websocket channels so the UI reflects latest progress in near real time.}
+      \resumeItem{Platform Architecture}
+        {Designed and built the In-App Guidance platform to improve feature adoption, onboarding, and end-user education.}
+      \resumeItem{Prompting and Contextual Help}
+        {Developed declarative/programmatic prompts, smart contextual help, and orchestration flows across Lightning user journeys.}
+      \resumeItem{Notifications and Leadership}
+        {Delivered in-app/email notifications for PRM workflows and guided teams on API adoption and implementation.}
+    \resumeItemListEnd
+
+  \resumeExpSubheading
+    {Salesforce}{Software Engineering MTS}{Sep 2016 -- Sep 2018}
+    \resumeItemListStart
+      \resumeItem{Navigation \/ Services}
+        {Designed and built customizable global navigation for multiple entity types, including bulk-operation service APIs.}
+      \resumeItem{Notifications and Favorites}
+        {Built focus management, notification APIs with PL/SQL bulk read/seen logic, and header/routing support for Favorites.}
+    \resumeItemListEnd
+
+  \resumeExpSubheading
+    {Salesforce}{Software Engineering AMTS}{Aug 2015 -- Aug 2016}
+    \resumeItemListStart
+      \resumeItem{Notifications Platform}
+        {Built core Lightning notifications capabilities using CometD/Streaming API, improved client streaming behavior, and shipped reusable UI components.}
+    \resumeItemListEnd
+
+  \resumeExpSubheading
+    {Salesforce}{Software Engineering Intern}{May 2014 -- Aug 2014}
+    \resumeItemListStart
+      \resumeItem{Mobile Platform}
+        {Built Salesforce1 offline priming APIs and client-side data store features using Java/JavaScript/Aura, with unit, functional, and E2E test coverage.}
+    \resumeItemListEnd
+
+  \resumeExpSubheading
+    {Cognizant}{Programmer Analyst Trainee}{Sep 2012 -- May 2013}
+    \resumeItemListStart
+      \resumeItem{Internal Tools}
+        {Developed internal tools using Java, COBOL, and DB2; collaborated with enterprise product teams.}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------------
+\section{Education}
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{M.S. in Computing Science} --- Simon Fraser University, Canada & Sep 2013 -- Aug 2015 \\
+  \textbf{B.E. in Computer Science} --- Anna University, India & Aug 2008 -- Mar 2012 \\
+\end{tabular*}
+
+%--------SKILLS------------
+
+\section{Skills}
+\small{
+  \textbf{Technologies}: Java, JavaScript, TypeScript, C, C++, HTML5, React,
+CSS, Lua \\
+  \textbf{Database}: SQL, PL/SQL, Postgres, MongoDB, DB2 \\
+  \textbf{Other}: REST, RPC, Kafka, Redis, AJAX, XML, Spring MVC, Node,
+Perforce, Git
+}
+
+%-----------ACTIVITIES AND AWARDS-----------------
+\section{Activities \& Awards}
+\resumeSubHeadingListStart
+  \resumeSubItem{Patent}{Targeting System For Web Page Components (US 11,442,754) -- \href{https://uspto.report/patent/grant/11,442,754}{link}}
+  \resumeSubItem{Patent}{Implementing A User Engagement Platform Using A Database System (US 20200097477) -- \href{https://uspto.report/patent/app/20200097477}{link}}
+  \resumeSubItem{Patent}{Creation and presentation of accessible targeted prompts (US 12,236,253 B2) -- \href{https://patents.google.com/patent/US12236253B2/en}{link}}
+  \resumeSubItem{Community}{Conducted Salesforce bootcamps as SME in Java, JavaScript, and testing best practices}
+  \resumeSubItem{Recognition}{Multiple spot bonuses for top performance, execution velocity, and critical incident recovery}
+\resumeSubHeadingListEnd
+
+\end{document}
